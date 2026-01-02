@@ -1,47 +1,123 @@
-
-.product-card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin: 15px;
-  display: inline-block;
-  text-align: center;
-  width: 220px;
-  box-shadow: 2px 2px 12px #aaa;
-  transition: transform 0.2s;
+/* GENERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.product-card:hover {
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6347; /* tomato color */
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* HOME */
+#home {
+  background-color: #fff5ee;
+}
+
+/* MENU */
+#menu {
+  background-color: #fff;
+}
+
+.menu-item {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.menu-item a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-item a:hover {
+  background-color: #128c50;
+}
+
+/* GALLERY */
+#gallery {
+  background-color: #fff5ee;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-container img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
   transform: scale(1.05);
 }
 
-.product-card img {
-  width: 100%;
-  height: auto;
+/* ORDER & CONTACT */
+#order, #contact {
+  background-color: #fff;
 }
 
-.product-card h3 {
-  margin: 10px 0 5px 0;
+#order p, #contact p {
+  font-size: 18px;
 }
-
-.product-card p {
-  margin: 5px 0;
-}
-
-button {
-  background-color: #ff3399;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 14px;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #e60073;
-}
-
-
-
-
-
