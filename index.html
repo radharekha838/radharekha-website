@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- Navigation Bar -->
   <header>
     <nav class="navbar">
       <div class="logo">Radharekha</div>
@@ -25,106 +25,66 @@
     </nav>
   </header>
 
-  <!-- HOME -->
+  <!-- Home Section -->
   <section id="home">
     <h1>Welcome to Radharekha</h1>
-    <p>Best Sketches , Calenders , Posters in Town!</p>
+    <p>Best Cakes and Sketches in Town!</p>
   </section>
 
-  <!-- MENU WITH SEARCH -->
+  <!-- Menu Section -->
   <section id="menu">
     <h2>Our Menu</h2>
-    <input type="text" id="menu-search" placeholder="Search for item...">
-    <div id="Our Best Products"></div>
+
+    <div class="menu-item">
+      <h3>Chocolate Cake</h3>
+      <p>Price: ₹300</p>
+      <a href="https://wa.me/1234567890?text=I%20want%20to%20order%20Chocolate%20Cake" target="_blank">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="menu-item">
+      <h3>Strawberry Cake</h3>
+      <p>Price: ₹350</p>
+      <a href="https://wa.me/1234567890?text=I%20want%20to%20order%20Strawberry%20Cake" target="_blank">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="menu-item">
+      <h3>Vanilla Cake</h3>
+      <p>Price: ₹250</p>
+      <a href="https://wa.me/1234567890?text=I%20want%20to%20order%20Vanilla%20Cake" target="_blank">
+        Order on WhatsApp
+      </a>
+    </div>
+
   </section>
 
-  <!-- GALLERY -->
+  <!-- Gallery Section -->
   <section id="gallery">
     <h2>Gallery</h2>
-    <div id="gallery-container"></div>
+    <div class="gallery-container">
+      <img src="images/sketch1.jpg" alt="Sketch 1">
+      <img src="images/sketch2.jpg" alt="Sketch 2">
+      <img src="images/sketch3.jpg" alt="Sketch 3">
+      <img src="images/sketch4.jpg" alt="Sketch 4">
+    </div>
   </section>
 
-  <!-- ORDER -->
+  <!-- Order Section -->
   <section id="order">
     <h2>Place Your Order</h2>
     <p>Click the WhatsApp button in the menu section to order easily!</p>
   </section>
 
-  <!-- CONTACT -->
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: radharekha838@example.com</p>
-    <p>Phone: +91 9341697505</p>
+    <p>Email: radharekha@example.com</p>
+    <p>Phone: +91 1234567890</p>
   </section>
-
-  <!-- JS SCRIPT -->
-  <script>
-  // ======= MENU ITEMS =======
-  const menuItems = [
-    {name: "Sumedh Mudgalkar (As Shri Krishna", price: 1000},
-    {name: "Jasprit Bumrah", price: 700},
-    {name: "Mahadev", price: 500},
-    {name: "Swan In A Sunstet", price: 300},
-    {name: "Girl Lehenga Mandla Creation", price: 800},
-    {name: "Ram Lalla", price: 600}
-    // Add more items here
-  ];
-
-  const menuContainer = document.getElementById("menu-items-container");
-
-  menuItems.forEach(item => {
-    const div = document.createElement("div");
-    div.className = "menu-item";
-    div.innerHTML = `
-      <h3>${item.name}</h3>
-      <p>Price: ₹${item.price}</p>
-      <a href="https://wa.me/1234567890?text=I want to order ${encodeURIComponent(item.name)}" target="_blank">
-        Order on WhatsApp
-      </a>
-    `;
-    menuContainer.appendChild(div);
-  });
-
-  // ======= SEARCH FUNCTIONALITY =======
-  const searchInput = document.getElementById("menu-search");
-  searchInput.addEventListener("input", () => {
-    const filter = searchInput.value.toLowerCase();
-    const menuItemsDivs = document.querySelectorAll(".menu-item");
-    menuItemsDivs.forEach(itemDiv => {
-      const text = itemDiv.querySelector("h3").textContent.toLowerCase();
-      if(text.includes(filter)){
-        itemDiv.style.display = "block";
-      } else {
-        itemDiv.style.display = "none";
-      }
-    });
-  });
-
-  // ======= GALLERY =======
-  const galleryContainer = document.getElementById("gallery-container");
-  const sketches = [
-    "sketch1.jpg",
-    "sketch2.jpg",
-    "sketch3.jpg",
-    "sketch4.jpg"
-    // Add more sketches here
-  ];
-  sketches.forEach(file => {
-    const img = document.createElement("img");
-    img.src = "images/" + file;
-    img.alt = file.split(".")[0];
-    galleryContainer.appendChild(img);
-  });
-  </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
 
