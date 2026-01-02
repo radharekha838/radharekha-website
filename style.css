@@ -1,10 +1,14 @@
 /* GENERAL */
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
   color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
 }
 
 /* NAVBAR */
@@ -12,7 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff6347;
+  background-color: #ff6347; /* tomato color */
   padding: 15px 30px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   position: sticky;
@@ -62,15 +66,6 @@ section {
   background-color: #fff;
 }
 
-#menu-search {
-  width: 80%;
-  max-width: 400px;
-  padding: 10px 15px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
 .menu-item {
   margin: 20px auto;
   padding: 20px;
@@ -83,7 +78,7 @@ section {
 .menu-item a {
   display: inline-block;
   margin-top: 10px;
-  background-color: #25D366;
+  background-color: #25D366; /* WhatsApp green */
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -100,21 +95,21 @@ section {
   background-color: #fff5ee;
 }
 
-#gallery-container {
+.gallery-container {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
 }
 
-#gallery-container img {
+.gallery-container img {
   width: 250px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transition: transform 0.3s;
 }
 
-#gallery-container img:hover {
+.gallery-container img:hover {
   transform: scale(1.05);
 }
 
@@ -127,19 +122,3 @@ section {
   font-size: 18px;
 }
 
-/* RESPONSIVE */
-@media(max-width: 768px){
-  .menu-item, #menu-search {
-    width: 95%;
-  }
-
-  #gallery-container img {
-    width: 45%;
-  }
-}
-
-@media(max-width: 480px){
-  #gallery-container img {
-    width: 90%;
-  }
-}
