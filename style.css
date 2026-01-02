@@ -1,0 +1,58 @@
+/* Body styling */
+body {
+    background-color: #fff7f0;  /* Soft cream background */
+    font-family: Georgia, serif; /* Elegant font */
+    text-align: center;          /* Center text */
+    padding: 60px;               /* Top & bottom spacing */
+}
+
+/* Heading styling */
+h1 {
+    font-size: 48px;
+    color: #8b0000;  /* Dark red, spiritual feel */
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Navigation styling */
+nav {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8b0000;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.gallery .item {
+    border: 2px solid #8b0000;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff0f5;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
